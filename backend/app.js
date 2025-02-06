@@ -7,7 +7,7 @@ import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const app = express();
-const port = 3200;
+const port = process.env.PORT || 3200;;
 
 // Create a body for URL Encoding request.
 app.use(bodyParser.urlencoded({ extended: true}));
