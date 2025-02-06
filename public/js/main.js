@@ -7,7 +7,6 @@ document.getElementById("generateBtn").addEventListener("click", async () => {
 
     const response = await fetch(`https://qrcodegenerator-i575.onrender.com/generate?data=${encodeURIComponent(inputData)}`);
     const qrImageUrl = await response.text();
-    console.log("QR Code URL:", qrImageUrl);
 
     const qrCodeDiv = document.getElementById("qrcode");
     qrCodeDiv.innerHTML = `<img src="${qrImageUrl}" alt="QR Code">`;
