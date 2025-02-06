@@ -4,7 +4,8 @@
   "description": "A simple and interactive QR Code Generator built using **HTML, CSS, JavaScript, and Node.js**. This application allows users to generate QR codes for websites and phone numbers, with features to download and save the generated codes.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "Chiemezie Uchenwoke",
