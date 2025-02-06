@@ -5,7 +5,7 @@ document.getElementById("generateBtn").addEventListener("click", async () => {
         return;
     }
 
-    const response = await fetch(`/generate?data=${encodeURIComponent(inputData)}`);
+    const response = await fetch(`https://qrcodegenerator-i575.onrender.com/generate?data=${encodeURIComponent(inputData)}`);
     const qrImageUrl = await response.text();
 
     const qrCodeDiv = document.getElementById("qrcode");
