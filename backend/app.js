@@ -18,11 +18,6 @@ app.use(bodyParser.json());
 // Serve static files like HTML, CSS, JS
 app.use(express.static('public'));
 
-
-app.get('/', function (req, res) {
-    res.sendFile(__dirname + "/public/index.html");
-})
-
 app.get("/generate", async (req, res) => {
     const { data } = req.query;
     if (!data) {
