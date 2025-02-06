@@ -1,5 +1,6 @@
 import express from "express";
 import qr from "qrcode";
+import cors from "cors";
 import bodyParser from "body-parser";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
@@ -14,6 +15,9 @@ app.use(bodyParser.urlencoded({ extended: true}));
 
 // parse application/json
 app.use(bodyParser.json());
+
+// Enable CORS
+app.use(cors());
 
 // Serve static files like HTML, CSS, JS
 app.use(express.static('public'));
