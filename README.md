@@ -14,5 +14,7 @@ A simple and interactive QR Code Generator built using **HTML, CSS, JavaScript, 
 ## Technologies Used  
 - **HTML, CSS** – Structure and styling  
 - **JavaScript (Vanilla JS)** – Frontend interactivity  
-- **Node.js** – Backend logic  
+- **Node.js & Express.js** – Backend logic  
 - **QR Code API / Library** – QR code generation  
+- **Vercel** - Frontend Deployment
+- **Render** - Backend Deployment
