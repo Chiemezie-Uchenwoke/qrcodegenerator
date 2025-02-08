@@ -34,70 +34,72 @@
 
 <body>
 
-    <header>
-        <nav class="container">
-            <a href="./index.html" class="loadpage">QR Code</a>
-
-            <div class="desktop">
-                <a href="#">login</a>
-                <a href="#">sign up</a>
-                <!-- <a href="./#contact">contact</a> -->
-            </div>
-
-            <div class="mobile">
-                <button class="toggler-open" id="toggler-open">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-
-                <div class="mobile-dropdown" id="mobile-dropdown">
-                    <div class="dropdown-inner">
-                        <button class="toggler-close" id="toggler-close">
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
+    <div class="page-container">
+        <header>
+            <nav class="container">
+                <a href="./index.html" class="loadpage">QR Code</a>
     
-                        <div class="menus">
-                            <a href="#">login</a>
-                            <a href="#">sign up</a>
-                            <!-- <a href="./#contact">contact</a> -->
-                        </div>
+                <div class="desktop">
+                    <a href="#">login</a>
+                    <a href="#">sign up</a>
+                    <!-- <a href="./#contact">contact</a> -->
+                </div>
     
-                        <div class="socials">
-                            <button class="github" id="github"><i class="fa-brands fa-github"></i></button>
-                            <button class="linkedin" id="linkedin"><i class="fa-brands fa-linkedin"></i></button>
-                            <button class="mail" id="mail"><i class="fa-regular fa-envelope"></i></button>
+                <div class="mobile">
+                    <button class="toggler-open" id="toggler-open">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+    
+                    <div class="mobile-dropdown" id="mobile-dropdown">
+                        <div class="dropdown-inner">
+                            <button class="toggler-close" id="toggler-close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+        
+                            <div class="menus">
+                                <a href="#">login</a>
+                                <a href="#">sign up</a>
+                                <!-- <a href="./#contact">contact</a> -->
+                            </div>
+        
+                            <div class="socials">
+                                <button class="github" id="github"><i class="fa-brands fa-github"></i></button>
+                                <button class="linkedin" id="linkedin"><i class="fa-brands fa-linkedin"></i></button>
+                                <button class="mail" id="mail"><i class="fa-regular fa-envelope"></i></button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <section class="qr__code__wrapper container">
-            <h1>QR Code Generator</h1>
-            <div class="qr-code-inner">
-                <div class="qr-input">
-                    <input type="text" id="inputData" placeholder="Enter URL or Phone Number">
-                    <button id="generateBtn">Generate QR Code</button>
-                    <button id="downloadBtn" class="downloadBtn">Download QR Code</button>
-                </div>
-
-                <div class="qr-image">
-                    <div class="img"  id="qrcode">
-                        <img src="./images/qr-code.jpg" alt="Qr Code" style="opacity: 0.15;">
+            </nav>
+        </header>
+    
+        <main>
+            <section class="qr__code__wrapper container">
+                <h1>QR Code Generator</h1>
+                <div class="qr-code-inner">
+                    <div class="qr-input">
+                        <input type="text" id="inputData" placeholder="Enter URL or Phone Number">
+                        <button id="generateBtn">Generate QR Code</button>
+                        <button id="downloadBtn" class="downloadBtn">Download QR Code</button>
+                    </div>
+    
+                    <div class="qr-image">
+                        <div class="img"  id="qrcode">
+                            <img src="./images/qr-code.jpg" alt="Qr Code" style="opacity: 0.15;">
+                        </div>
                     </div>
                 </div>
+            </section>
+        </main>
+    
+        <footer class="top-margin">
+            <div>
+                <a href="./index.html" class="loadpage">QR Code</a>
+                <p>&copy; all rights reserved <span id="year"></span></p>
             </div>
-        </section>
-    </main>
-
-    <footer class="top-margin">
-        <div>
-            <a href="./index.html" class="loadpage">QR Code</a>
-            <p>&copy; all rights reserved <span id="year"></span></p>
-        </div>
-    </footer>
-
+        </footer>
+    
+    </div>
 
 
     <script src="./js/nav.js"></script>
