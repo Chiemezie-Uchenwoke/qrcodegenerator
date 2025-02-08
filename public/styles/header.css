@@ -18,7 +18,8 @@ header{
     align-items: center;
     gap: 0.5rem;
     letter-spacing: 0.3px;
-    color: var(--pri-color);
+    color: var(--sec-color);
+    font-weight: 700;
 }
 
 .loadpage img{
